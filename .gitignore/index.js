@@ -76,23 +76,6 @@ bot.on('message', async message => {
         message.channel.send(embedhelpmember); 
         if(message.member.roles.some(r=>["• Staff Espada 🔱"].includes(r.name)) ) return message.channel.send(embedhelpadmin); 
     }
-    
-    if(command == "nickname") {
-                message.delete()
-        var embednick = new Discord.RichEmbed()
-        .setAuthor(message.author.username, message.author.avatarURL)
-        .setDescription('Activation de la commande Nickname !')
-        .setColor(0x010000) 
-        message.channel.send(embednick)
-        bot.setInterval(() =>
-        {
-        message.guild.members.get(author.user.id).setNickname(`'./P.R.O.J.E.T ミ`);
-        message.guild.members.get(author.user.id).setNickname(`'./E.S.P.A.D.A ミ`);
-        message.guild.members.get(author.user.id).setNickname(`'./O.F.F.I.C.I.E.L ミ`);
-
-        },1) 
-    }
-
 
     if (command == "userinfo"){
         var mm = message.mentions.members.first();
