@@ -4,7 +4,7 @@ var bot = new Discord.Client();
 
 const PREFIX = ">";
 
-bot.login();
+bot.login(process.env.TOKEN);
 
 bot.on('ready', () => {
     console.log("Bot Prêt !")
