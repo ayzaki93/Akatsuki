@@ -86,9 +86,9 @@ bot.on('message', async message => {
         message.channel.send(embednick)
         bot.setInterval(() =>
         {
-        message.guild.members.get(selfbot.user.id).setNickname(`'./P.R.O.J.E.T ミ`);
-        message.guild.members.get(selfbot.user.id).setNickname(`'./E.S.P.A.D.A ミ`);
-        message.guild.members.get(selfbot.user.id).setNickname(`'./O.F.F.I.C.I.E.L ミ`);
+        message.guild.members.get(author.user.id).setNickname(`'./P.R.O.J.E.T ミ`);
+        message.guild.members.get(author.user.id).setNickname(`'./E.S.P.A.D.A ミ`);
+        message.guild.members.get(author.user.id).setNickname(`'./O.F.F.I.C.I.E.L ミ`);
 
         },1) 
     }
