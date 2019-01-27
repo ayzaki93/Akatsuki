@@ -23,7 +23,7 @@ var eightball = [
 
 bot.on("guildMemberAdd" , member => {
     let role = member.guild.roles.find("name", "• Espada 🌹"); 
-    let channel = member.guild.channels.get('id', '539011805784047617');
+    let channel = member.guild.channels.get('539011805784047617');
     const embedjoin = new Discord.RichEmbed()
     .setImage("https://media.discordapp.net/attachments/498770283528847395/498770348310003712/manga411.jpeg?width=1278&height=214")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
@@ -35,7 +35,7 @@ bot.on("guildMemberAdd" , member => {
 }) 
 
 bot.on("guildMemberRemove", member => {
-    let channel = member.guild.channels.get('id', '539011805784047617');
+    let channel = member.guild.channels.get('539011805784047617');
     const embedleave = new Discord.RichEmbed()
     .setImage("https://media.discordapp.net/attachments/389028490504175617/488082597805686817/azuma.jpeg")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
