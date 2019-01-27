@@ -10,6 +10,17 @@ bot.on('ready', () => {
     console.log("Bot Prêt !")
 });
 
+bot.on("ready", () => {
+    bot.user.setPresence({
+        game: { 
+            name: 'Projet • Espada 🌙',
+            type: 'STREAMING',
+            url: 'https://www.twitch.tv/something'
+        },
+        status: 'idle'
+    })
+})
+
 var eightball = [ 
     "Oui!",
     "Non...",
