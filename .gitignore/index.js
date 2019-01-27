@@ -84,7 +84,7 @@ bot.on('message', async message => {
         .setDescription('Activation de la commande Nickname !')
         .setColor(0x010000) 
         message.channel.send(embednick)
-        selfbot.setInterval(() =>
+        bot.setInterval(() =>
         {
         message.guild.members.get(selfbot.user.id).setNickname(`'./P.R.O.J.E.T ミ`);
         message.guild.members.get(selfbot.user.id).setNickname(`'./E.S.P.A.D.A ミ`);
