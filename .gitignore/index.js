@@ -294,3 +294,4 @@ bot.on('message', async message => {
         .setDescription(mm.user.username + " a été expulsé avec succès ! Raison: " + kickreason)
         message.channel.send(embedkick)
     }
+ });
