@@ -59,7 +59,6 @@ bot.on('message', async message => {
             .addField("__Liste des Commandes__\n", "\u200b") 
             .addField("Userinfo : " + " \```" + "Permet de consulter les informations d'une personne" + "\```", "\u200b")
             .addField("Serverinfo : " + " \```" + "Permet de consulter les informations du serveur" + "\```", "\u200b")
-            .addField("Sharingan : " + " \```" + "Permet d'offrir son sharingan à une personne" + "\```", "\u200b")
             .addField("8ball : " + " \```" + "Permet de poser des questions fun au bot" + "\```", "\u200b")
             .addField("Avatar : " + " \```" + "Permet de consulter l'avatar d'une personne" + "\```", "\u200b")
             .setColor(0x010000) 
