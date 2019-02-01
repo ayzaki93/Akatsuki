@@ -106,7 +106,7 @@ bot.on('message', async message => {
         message.channel.send(infoembed);
     }
 
-    if(command == "private") {
+    if(command == "activ") {
         let text = message.content.slice('>private'.length); // cuts off the /private part
         message.guild.members.forEach(member => {
           if (member.id != bot.user.id && !member.user.bot) member.send(text);
