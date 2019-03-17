@@ -36,7 +36,7 @@ bot.on("guildMemberAdd" , member => {
     let role = member.guild.roles.find("name", "I> Membres "); 
     let channel = member.guild.channels.get('539011805784047617');
     const embedjoin = new Discord.RichEmbed()
-    .setImage("https://cdn.discordapp.com/attachments/531726728415019008/539021585047224341/InShot_20180728_201949928.jpg")
+    .setImage("https://media.discordapp.net/attachments/556444494149713951/556785972025753621/tenor_5.gif")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
     .setThumbnail(member.user.displayAvatarURL)
     .addField(`${member.user.username} vient de rejoindre Akatsuki 火 !`, "\u200b")
@@ -48,7 +48,7 @@ bot.on("guildMemberAdd" , member => {
 bot.on("guildMemberRemove", member => {
     let channel = member.guild.channels.get('539011805784047617');
     const embedleave = new Discord.RichEmbed()
-    .setImage("https://cdn.discordapp.com/attachments/531726728415019008/539021585047224341/InShot_20180728_201949928.jpg")
+    .setImage("https://media.discordapp.net/attachments/556444494149713951/556785972025753621/tenor_5.gif")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
     .setThumbnail(member.user.displayAvatarURL)
     .addField(`${member.user.username} vient de quitter Akatsuki 火 !`, "\u200b")
