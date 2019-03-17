@@ -73,7 +73,7 @@ bot.on('message', async message => {
             .addField("8ball : " + " \```" + "Permet de poser des questions fun au bot" + "\```", "\u200b")
             .addField("Avatar : " + " \```" + "Permet de consulter l'avatar d'une personne" + "\```", "\u200b")
             .setColor(0x010000) 
-            .setFooter("By •/Onizuka#8007 !") 
+            .setFooter("by シスイ#3056 !") 
         var embedhelpadmin = new Discord.RichEmbed() 
             .addField("__Liste des Commandes Administrateur__\n", "\u200b") 
             .addField("Say : " + " \```" + "Permet de faire marquer ce que l'on souhaite au bot" + "\```", "\u200b")
