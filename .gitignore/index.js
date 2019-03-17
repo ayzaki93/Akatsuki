@@ -13,7 +13,7 @@ bot.on('ready', () => {
 bot.on("ready", () => {
     bot.user.setPresence({
         game: { 
-            name: 'Projet • Espada 🌙',
+            name: 'By シスイ#3056',
             type: 'STREAMING',
             url: 'https://www.twitch.tv/something'
         },
