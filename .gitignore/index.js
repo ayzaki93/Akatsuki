@@ -34,7 +34,7 @@ var eightball = [
 
 bot.on("guildMemberAdd" , member => {
     let role = member.guild.roles.find("name", "I> Membres "); 
-    let channel = member.guild.channels.get('539011805784047617');
+    let channel = member.guild.channels.get('556444494149713951');
     const embedjoin = new Discord.RichEmbed()
     .setImage("https://media.discordapp.net/attachments/556444494149713951/556785972025753621/tenor_5.gif")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
@@ -46,7 +46,7 @@ bot.on("guildMemberAdd" , member => {
 }) 
 
 bot.on("guildMemberRemove", member => {
-    let channel = member.guild.channels.get('539011805784047617');
+    let channel = member.guild.channels.get('556444494149713951');
     const embedleave = new Discord.RichEmbed()
     .setImage("https://media.discordapp.net/attachments/556444494149713951/556785972025753621/tenor_5.gif")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
