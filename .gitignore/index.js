@@ -36,10 +36,10 @@ bot.on("guildMemberAdd" , member => {
     let role = member.guild.roles.find("name", "I> Membres "); 
     let channel = member.guild.channels.get('556444494149713951');
     const embedjoin = new Discord.RichEmbed()
-    .setImage("https://media.discordapp.net/attachments/556444494149713951/556785972025753621/tenor_5.gif")
+    .setImage("https://cdn.discordapp.com/attachments/556444201579970572/568919166040539136/0J3MtbHa4IYIv9odjaFnAMlup2U.jpg")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
     .setThumbnail(member.user.displayAvatarURL)
-    .addField(`${member.user.username} vient de rejoindre Akatsuki 火 !`, "\u200b")
+    .addField(`${member.user.username} vient de rejoindre Tenshiki 🌟 !`, "\u200b")
     .addField(`Le serveur compte actuellement : ${member.guild.memberCount} membres !`, "\u200b")
     channel.send(embedjoin)
     member.addRole(role) 
@@ -48,10 +48,10 @@ bot.on("guildMemberAdd" , member => {
 bot.on("guildMemberRemove", member => {
     let channel = member.guild.channels.get('556444494149713951');
     const embedleave = new Discord.RichEmbed()
-    .setImage("https://media.discordapp.net/attachments/556444494149713951/556785972025753621/tenor_5.gif")
+    .setImage("hhttps://cdn.discordapp.com/attachments/556444201579970572/568919166040539136/0J3MtbHa4IYIv9odjaFnAMlup2U.jpg")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
     .setThumbnail(member.user.displayAvatarURL)
-    .addField(`${member.user.username} vient de quitter Akatsuki 火 !`, "\u200b")
+    .addField(`${member.user.username} vient de quitter Tenshiki 🌟 !`, "\u200b")
     .addField(`Le serveur compte actuellement : ${member.guild.memberCount} membres !`, "\u200b")
     channel.send(embedleave)
 })
