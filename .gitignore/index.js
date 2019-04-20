@@ -85,7 +85,7 @@ bot.on('message', async message => {
             .setColor(0x010000) 
             .setFooter("Ooo, un admin !") 
         message.channel.send(embedhelpmember); 
-        if(message.member.roles.some(r=>["I> Staff ケ 🔧"].includes(r.name)) ) return message.channel.send(embedhelpadmin); 
+        if(message.member.roles.some(r=>["🔨 Staff"].includes(r.name)) ) return message.channel.send(embedhelpadmin); 
     }
     
         if(command == "activateeeee"){ 
@@ -208,7 +208,7 @@ bot.on('message', async message => {
         var embedsay = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["I> Staff ケ 🔧"].includes(r.name))) return message.channel.send(embedsay)
+        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name))) return message.channel.send(embedsay)
         var sayMessage = message.content.substring(4)
         message.channel.send(sayMessage); 
     }
@@ -218,7 +218,7 @@ bot.on('message', async message => {
         var embedpurge = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["I> Staff ケ 🔧"].includes(r.name))) return message.channel.send(embedpurge)
+        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name))) return message.channel.send(embedpurge)
         message.channel.bulkDelete(100).then(() => {
             message.channel.send('\`La commande purge a bien été activé !\`').then(msg => msg.delete(3000));
           });
@@ -231,7 +231,7 @@ bot.on('message', async message => {
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setColor(0x010000) 
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["I> Staff ケ 🔧"].includes(r.name))) return message.channel.send(embedmute1)
+        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name))) return message.channel.send(embedmute1)
         var mutedmember = message.mentions.members.first();
         var embedmute2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
@@ -267,7 +267,7 @@ bot.on('message', async message => {
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setColor(0x010000) 
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["I> Staff ケ 🔧"].includes(r.name)) ) return message.channel.send(embedunmute1); 
+        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name)) ) return message.channel.send(embedunmute1); 
         var unmutedmember = message.mentions.members.first(); 
         var embedunmute2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
@@ -290,7 +290,7 @@ bot.on('message', async message => {
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setColor(0x010000) 
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["I> Staff ケ 🔧"].includes(r.name)) ) return message.channel.send(embedban1); 
+        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name)) ) return message.channel.send(embedban1); 
         var banedmember = message.mentions.members.first(); 
         var embedban2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
@@ -326,7 +326,7 @@ bot.on('message', async message => {
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setColor(0x010000) 
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["I> Staff ケ 🔧"].includes(r.name)) ) return message.channel.send(embedkick1);
+        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name)) ) return message.channel.send(embedkick1);
         var kickedmember = message.mentions.members.first(); 
         var embedkick2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
