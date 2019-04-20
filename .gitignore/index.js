@@ -33,16 +33,14 @@ var eightball = [
 ]
 
 bot.on("guildMemberAdd" , member => {
-    let role = member.guild.roles.find("name", "I> Membres "); 
     let channel = member.guild.channels.get('556444494149713951');
     const embedjoin = new Discord.RichEmbed()
     .setImage("https://cdn.discordapp.com/attachments/556444201579970572/568919166040539136/0J3MtbHa4IYIv9odjaFnAMlup2U.jpg")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
     .setThumbnail(member.user.displayAvatarURL)
-    .addField(`${member.user.username} vient de rejoindre Tenshiki 🌟 !`, "\u200b")
+    .addField(`${member.user.username} vient de rejoindre Madrina 🌟 !`, "\u200b")
     .addField(`Le serveur compte actuellement : ${member.guild.memberCount} membres !`, "\u200b")
     channel.send(embedjoin)
-    member.addRole(role) 
 }) 
 
 bot.on("guildMemberRemove", member => {
@@ -51,7 +49,7 @@ bot.on("guildMemberRemove", member => {
     .setImage("hhttps://cdn.discordapp.com/attachments/556444201579970572/568919166040539136/0J3MtbHa4IYIv9odjaFnAMlup2U.jpg")
     .setAuthor(member.user.tag, member.user.displayAvatarURL)
     .setThumbnail(member.user.displayAvatarURL)
-    .addField(`${member.user.username} vient de quitter Tenshiki 🌟 !`, "\u200b")
+    .addField(`${member.user.username} vient de quitter Madrina 🌟 !`, "\u200b")
     .addField(`Le serveur compte actuellement : ${member.guild.memberCount} membres !`, "\u200b")
     channel.send(embedleave)
 })
@@ -85,7 +83,7 @@ bot.on('message', async message => {
             .setColor(0x010000) 
             .setFooter("Ooo, un admin !") 
         message.channel.send(embedhelpmember); 
-        if(message.member.roles.some(r=>["🔨 Staff"].includes(r.name)) ) return message.channel.send(embedhelpadmin); 
+        if(message.member.roles.some(r=>["..."].includes(r.name)) ) return message.channel.send(embedhelpadmin); 
     }
     
         if(command == "activateeeee"){ 
@@ -208,7 +206,7 @@ bot.on('message', async message => {
         var embedsay = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name))) return message.channel.send(embedsay)
+        if (!message.member.roles.some(r=>["..."].includes(r.name))) return message.channel.send(embedsay)
         var sayMessage = message.content.substring(4)
         message.channel.send(sayMessage); 
     }
@@ -218,7 +216,7 @@ bot.on('message', async message => {
         var embedpurge = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name))) return message.channel.send(embedpurge)
+        if (!message.member.roles.some(r=>["..."].includes(r.name))) return message.channel.send(embedpurge)
         message.channel.bulkDelete(100).then(() => {
             message.channel.send('\`La commande purge a bien été activé !\`').then(msg => msg.delete(3000));
           });
@@ -231,7 +229,7 @@ bot.on('message', async message => {
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setColor(0x010000) 
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name))) return message.channel.send(embedmute1)
+        if (!message.member.roles.some(r=>["..."].includes(r.name))) return message.channel.send(embedmute1)
         var mutedmember = message.mentions.members.first();
         var embedmute2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
@@ -267,7 +265,7 @@ bot.on('message', async message => {
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setColor(0x010000) 
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name)) ) return message.channel.send(embedunmute1); 
+        if (!message.member.roles.some(r=>["..."].includes(r.name)) ) return message.channel.send(embedunmute1); 
         var unmutedmember = message.mentions.members.first(); 
         var embedunmute2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
@@ -290,7 +288,7 @@ bot.on('message', async message => {
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setColor(0x010000) 
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name)) ) return message.channel.send(embedban1); 
+        if (!message.member.roles.some(r=>["..."].includes(r.name)) ) return message.channel.send(embedban1); 
         var banedmember = message.mentions.members.first(); 
         var embedban2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
@@ -326,7 +324,7 @@ bot.on('message', async message => {
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setColor(0x010000) 
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["🔨 Staff"].includes(r.name)) ) return message.channel.send(embedkick1);
+        if (!message.member.roles.some(r=>["..."].includes(r.name)) ) return message.channel.send(embedkick1);
         var kickedmember = message.mentions.members.first(); 
         var embedkick2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
