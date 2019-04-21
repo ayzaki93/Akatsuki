@@ -288,7 +288,7 @@ bot.on('message', async message => {
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
         .setColor(0x010000) 
         .setDescription(`${message.author.tag} Tu n'as pas les permissions administrateur !`)
-        if (!message.member.roles.some(r=>["..."].includes(r.name)) ) return message.channel.send(embedban1); 
+        if (!message.member.roles.some(r=>["muted"].includes(r.name)) ) return message.channel.send(embedban1); 
         var banedmember = message.mentions.members.first(); 
         var embedban2 = new Discord.RichEmbed()
         .setAuthor(message.author.tag, message.author.displayAvatarURL)
