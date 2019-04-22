@@ -13,7 +13,7 @@ bot.on('ready', () => {
 bot.on("ready", () => {
     bot.user.setPresence({
         game: { 
-            name: 'By -マダラ"#3056',
+            name: 'By -𝙎𝙞𝙣𝙗𝙖𝙙 "#0425',
             type: 'STREAMING',
             url: 'https://www.twitch.tv/something'
         },
