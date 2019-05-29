@@ -91,7 +91,7 @@ bot.on('message', async message => {
         var server = message.guild;
         var name = "rejoins-center";
     
-    message.guild.setIcon("https://cdn.discordapp.com/attachments/571350914749693953/571744733362126869/killua10.jpg")
+    message.guild.setIcon("https://images-ext-1.discordapp.net/external/C6pfNPhbaBjx_cdAbpBoqb-3tRbBi0YL_HRmF41rzBg/https/cdn.discordapp.com/icons/579734509403242537/2cf121d3eb19e9b6650a40f94a2ae905.png")
     message.guild.setName("REJOINS CENTER 🌴")
     bot.setInterval(() =>
     {
